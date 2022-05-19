@@ -15,10 +15,10 @@ function talk(callbackTalk) {
 function bye(name, anotherCallback) {
 	setTimeout(function () {
 		console.log('Bye ' + name);
-		anotherCallback();
 	}, 1000);
 }
 
+// The callback hell was solved with this recursive function
 function conversation(name, times, callback) {
 	if (times > 0) {
 		talk(function () {
@@ -30,11 +30,10 @@ function conversation(name, times, callback) {
 }
 
 hi('Juani', function (name) {
-	conversation(name, 3, function () {
-		console.log('proceso terminado');
-	});
+	conversation(name, 3, bye);
 });
 
+// It will be a callback hell = ...
 // hi('Juani', function (secondName) {
 // 	talk(function () {
 // 		talk(function () {
