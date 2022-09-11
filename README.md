@@ -1,14 +1,3 @@
-### ACTIVE RECALL
-
--   A
--   B
-    -   b
--   C
-
-### MÉTODO FEYNMAN
-
----
-
 # NOTAS
 
 # Que es NodeJS?
